@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="_E5E5E5">#E5E5E5</color>
+    <color name="_F9F9F9">#F9F9F9</color>
+    <color name="_ffffff">#ffffff</color>
+    <color name="_62B4FB">#62B4FB</color>
+    <color name="_F1F1F1">#F1F1F1</color>
+    <!--奥运五环色值-->
+    <color name="_006BB0">#006BB0</color>
+    <color name="_1D1815">#1D1815</color>
+    <color name="_DC2F1F">#DC2F1F</color>
+    <color name="_EFA90D">#EFA90D</color>
+    <color name="_059341">#059341</color>
+    <color name="_1E1E1E">#1E1E1E</color>
+    <!--半透明-->
+    <color name="_80E5E5E5">#80E5E5E5</color>
+    <color name="_FECC75">#FECC75</color>
+
+    <color name="_d63e3e">#d63e3e</color>
+    <color name="_444444">#444444</color>
+    <color name="_ff3b30">#ff3b30</color>
+
+    <color name="_E2E2E2">#E2E2E2</color>
+    <color name="_BABABA">#BABABA</color>
+
+</resources>
