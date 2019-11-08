@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/_ff3b30">
+
+    <com.example.newsapp.widget.IconTextView
+        android:id="@+id/top_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:text="@string/icon_back"
+        android:textSize="18sp" />
+
+    <com.example.newsapp.widget.IconTextView
+        android:id="@+id/top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="标题"
+        android:textSize="18sp" />
+
+    <com.example.newsapp.widget.IconTextView
+        android:id="@+id/top_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:text="提交"
+        android:textSize="18sp" />
+</RelativeLayout>

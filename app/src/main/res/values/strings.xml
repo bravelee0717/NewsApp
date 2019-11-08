@@ -1,6 +1,230 @@
 <resources>
     <string name="app_name">上官婉儿</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="icon_cancel">&#xe816;</string>
+
+    <string name="icon_study">&#xe840;</string>
+    <string name="icon_study_selected">&#xe841;</string>
+    <string name="icon_development">&#xe8b9;</string>
+    <string name="icon_development_selected">&#xe8ba;</string>
+
+    <string name="icon_dynamic">&#xe812;</string>
+    <string name="icon_dynamic_selected">&#xe813;</string>
+    <string name="icon_letter">&#xe828;</string>
+    <string name="icon_letter_selected">&#xe829;</string>
+    <string name="icon_record">&#xe8bb;</string>
+    <string name="icon_record_selected">&#xe8bc;</string>
+    <string name="icon_feature">&#xe8b8;</string>
+    <string name="icon_feature_selected">&#xe8c0;</string>
+    <string name="icon_oa">&#xe8be;</string>
+    <string name="icon_guanli">&#xe8c1;</string>
+
+    //Announcement
+    <string name="icon_commentzanno">&#xe836;</string>
+    <string name="icon_commentzanoff">&#xe837;</string>
+
+
+    <string name="icon_audio">&#xe806;</string>
+    <string name="icon_vote">&#xe842;</string>
+    <string name="icon_diaocha">&#xe80b;</string>
+    <string name="icon_praise_normal">&#xe836;</string>
+    <string name="icon_message_normal">&#xe828;</string>
+
+    <string name="icon_general_practice">&#xe803;</string>
+    <string name="icon_chinese">&#xe80a;</string>
+    <string name="icon_physics">&#xe838;</string>
+    <string name="icon_math">&#xe824;</string>
+    <string name="icon_english">&#xe815;</string>
+    <string name="icon_chemistry">&#xe809;</string>
+    <string name="icon_biology">&#xe807;</string>
+    <string name="icon_history">&#xe81f;</string>
+    <string name="icon_geography">&#xe81e;</string>
+    <string name="icon_political">&#xe835;</string>
+    <string name="icon_sxpd">&#xe82a;</string>
+    <string name="icon_music">&#xe82b;</string>
+    <string name="icon_art">&#xe805;</string>
+    <string name="icon_exam">&#xe81b;</string>
+    <string name="icon_sport_boy">&#xe83e;</string>
+    <string name="icon_sport_girl">&#xe83f;</string>
+
+    <string name="icon_mind">&#xe82a;</string>
+    <string name="icon_body_report">&#xe832;</string>
+    <string name="icon_body_exam">&#xe815;</string>
+    <string name="icon_inter_specially">&#xe821;</string>
+    <string name="icon_social_practice">&#xe83d;</string>
+    <string name="icon_activity">&#xe802;</string>
+    <string name="icon_evaluate">&#xe81a;</string>
+    <string name="icon_subject">&#xe84d;</string>
+    <string name="icon_motion_guidance">&#xe81c;</string>
+    <string name="icon_empty_view">&#xe804;</string>
+    <string name="icon_more">&#xe849;</string>
+    <string name="icon_physical_right_menu">&#xe84b;</string>
+    <string name="icon_delete">&#xe819;</string>
+    <string name="icon_edit_active_feed">&#xe814;</string>
+
+    <string name="icon_calender">&#xe808;</string>
+    <string name="icon_empty_active">&#xe82c;</string>
+    <string name="icon_empty_recommend">&#xe83c;</string>
+    <string name="icon_exercise_zhedie">&#xe846;</string>
+    <string name="icon_exercise_shouhui">&#xe847;</string>
+    <string name="icon_exercise_empty">&#xe81d;</string>
+    <string name="icon_exercise_panduanright">&#xe839;</string>
+    <string name="icon_exercise_panduanerror">⨉</string>
+
+    <string name="icon_ex_right">&#xe839;</string>
+    <string name="icon_ex_error">&#xe817;</string>
+
+    <string name="icon_ex_wei_ke">&#xe874;</string>
+    <string name="icon_xsda">&#xe8ab;</string>
+    <string name="icon_zhaq">&#xe860;</string>
+    <string name="icon_xtsz">&#xe867;</string>
+    <string name="icon_xjk">&#xe891;</string>
+    <string name="icon_daoxue">&#xe880;</string>
+
+    <string name="icon_tzbg">&#xe82f;</string>
+    <string name="icon_back">&#xe845;</string>
+    <string name="icon_close">&#xe817;</string>
+    <string name="icon_error_ben">&#xe881;</string>
+    <string name="icon_homework">&#xe82f;</string>
+    <string name="icon_classroom">&#xe80c;</string>
+
+    <string name="icon_interest_course">&#xe889;</string>
+    <string name="icon_menu_evaluate">&#xe88f;</string>
+    <string name="icon_resources">&#xe880;</string>
+
+    <string name="icon_right">&#xe839;</string>
+    <string name="icon_wrong">&#xe817;</string>
+    <string name="icon_weike">&#xe84e;</string>
+    <string name="icon_growth_profile">&#xe891;</string>
+    <string name="icon_growth_jilu">&#xe892;</string>
+    <string name="icon_growth_dangan">&#xe8ab;</string>
+    <string name="icon_growth_publish">&#xe843;</string>
+    <string name="icon_shanxuan">&#xe8aa;</string>
+    <string name="icon_im_image">&#xe833;</string>
+    <string name="icon_im_jinghao">&#xe8a9;</string>
+    <string name="icon_delete_jiaxiao">&#xe80e;</string>
+    <string name="icon_filter">&#xe84b;</string>
+    <string name="icon_report">&#xe8af;</string>
+
+    <string name="icon_exercise">&#xe85c;</string>
+    <string name="icon_weike_video">&#xe874;</string>
+    <string name="icon_xinli">&#xe8c9;</string>
+    <string name="icon_ktlx">&#xe8c8;</string>
+
+
+    <!--<string name="icon_qingjia">&#xe88c;</string>-->
+    <string name="icon_person">&#xe823;</string>
+    <string name="icon_password">&#xe860;</string>
+    <string name="icon_setting">&#xe867;</string>
+    <string name="icon_qingjia">&#xe88c;</string>
+    <string name="dynamic_user_des">%1$s%2$s&#160;&#160;|&#160;&#160;%3$s</string>
+
+    <string name="icon_grxx">&#xe822;</string>
+    <string name="icon_qhzh">&#xe8bd;</string>
+    <string name="icon_ceyan">&#xe89c;</string>
+    <string name="icon_ktxl">&#xe8c8;</string>
+    <string name="icon_classboard">&#xe8ca;</string>
+
+    <string name="icon_down_indicator">&#xe846;</string>
+    <string name="icon_calendar">&#xe808;</string>
+    <string name="icon_add">&#xe843;</string>
+
+
+    //Qingjia
+    <string name="icon_chexiao">&#xe87b;</string>
+    <string name="icon_bianji">&#xe814;</string>
+    <string name="icon_student">&#xe822;</string>
+
+
+    <string name="icon_zan">&#xe836;</string>
+    <string name="icon_zan_checked">&#xe837;</string>
+    <string name="icon_tuijian">&#xe836;</string>
+    <string name="icon_yi_tuijian">&#xe837; 已推荐</string>
+    <string name="icon_comment">&#xe828;</string>
+    <string name="icon_comment_checked">&#xe829;</string>
+    <string name="icon_dongtai">&#xe812;</string>
+    <string name="icon_dongtai_checked">&#xe813;</string>
+    <string name="icon_sixing">&#xe828;</string>
+    <string name="icon_sixing_checked">&#xe829;</string>
+    <string name="icon_feature_checked">&#xe8c0;</string>
+    <string name="icon_oa_checked">&#xe8bf;</string>
+    <string name="icon_xiaowu">&#xe882;</string>
+    <string name="icon_xiaowu_checked">&#xe883;</string>
+    <string name="icon_guanli_checked">&#xe8c2;</string>
+    <string name="icon_indicator_right">&#xe844;</string>
+    <string name="icon_error_normal_copy">&#xe817;</string>
+    <string name="icon_indicator_down">&#xe846;</string>
+    <string name="icon_indicator_up">&#xe847;</string>
+    <string name="icon_no_jiaxiaogonggao">&#xe804;</string>
+    <string name="icon_ppp">&#xe849;</string>
+    <string name="icon_error_fine">&#xe816;</string>
+    <string name="icon_im_tel">&#xe831;</string>
+    <string name="icon_x">&#xe817;</string>
+    <string name="icon_pic">&#xe833;</string>
+    <string name="icon_menu_lianxi">&#xe849;</string>
+    <string name="icon_select_subject">&#xe85c;</string>
+    <string name="icon_rotate_right">&#xe864;</string>
+    <string name="icon_rotate_left">&#xe865;</string>
+
+
+    <string name="enter">&#x843;</string>
+
+    <string name="icon_menu_dynamic">&#xe811;</string>
+    <string name="icon_menu_alltek">&#xe803;</string>
+    <string name="icon_menu_chinese">&#xe80a;</string>
+    <string name="icon_menu_math">&#xe824;</string>
+    <string name="icon_menu_english">&#xe815;</string>
+    <string name="icon_menu_activity">&#xe802;</string>
+    <string name="icon_menu_sport_boy">&#xe83e;</string>
+    <string name="icon_menu_sport_girl">&#xe83f;</string>
+    <string name="icon_menu_medical">&#xe827;</string>
+    <string name="icon_menu_exercise_guidance">&#xe81c;</string>
+    <string name="icon_menu_homework">&#xe820;</string>
+    <string name="icon_menu_exam">&#xe81b;</string>
+    <string name="icon_menu_exercise">&#xe81d;</string>
+    <string name="icon_menu_physical">&#xe832;</string>
+    <string name="icon_menu_edu_act">&#xe84d;</string>
+    <string name="icon_menu_new_act">&#xe82c;</string>
+    <string name="icon_menu_new_exercise">&#xe82e;</string>
+    <string name="icon_menu_new_work">&#xe8a4;</string>
+    <string name="icon_menu_ketang">&#xe80c;</string>
+    <string name="icon_menu_xingqu">&#xe889;</string>
+    <string name="icon_menu_pingjia">&#xe88f;</string>
+    <string name="icon_publish_xiaonei">&#xe830;</string>
+    <string name="sport_publish_add">&#xe84c;</string>
+    <string name="icon_right_normal_copy">&#xe839;</string>
+    <string name="icon_weike_create_video">&#xe878;</string>
+    <string name="icon_video">&#xe877;</string>
+    <string name="icon_me_fabu">&#xe825;</string>
+    <string name="icon_push">&#xe87c;</string>
+    <string name="icon_personal">&#xe87f;</string>
+    <string name="icon_car">&#xe884;</string>
+    <string name="icon_absent">&#xe888;</string>
+    <string name="icon_out">&#xe886;</string>
+    <string name="icon_repair">&#xe887;</string>
+    <string name="icon_menu_daoxue">&#xe880;</string>
+    <string name="icon_student_qingjia">&#xe88c;</string>
+    <string name="icon_menu_yuejuan">&#xe890;</string>
+    <string name="icon_no_yuejuan">&#xe8ac;</string>
+    <string name="icon_praise">&#xe837;</string>
+    <string name="icon_lianxi_text">&#xe879;</string>
+    <string name="icon_lianxi_rectangle">&#xe852;</string>
+    <string name="icon_lianxi_move">&#xe87a;</string>
+    <string name="icon_lianxi_undo">&#xe87b;</string>
+    <string name="icon_lianxi_reset">&#xe866;</string>
+    <string name="icon_dangan">&#xe8ab;</string>
+    <string name="icon_xueji">&#xe891;</string>
+    <string name="icon_chengzhangjilu">&#xe892;</string>
+    <string name="icon_chengzhangjilu_shaixuan">&#xe8aa;</string>
+
+
+    <string name="icon_pjbz">&#xe8c4;</string>
+    <string name="icon_banpai">&#xe8ca;</string>
+    <string name="icon_qjtj">&#xe8c5;</string>
+    <string name="icon_xlpc">&#xe8c9;</string>
+    <string name="icon_xiaojia">&#xe885;</string>
+
+
+    <string name="icon_default">&#xe82d;</string>
+    <string name="icon_fujian">&#xe834;</string>
 </resources>

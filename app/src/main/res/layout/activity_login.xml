@@ -24,6 +24,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginRight="20dp"
         android:inputType="text|textMultiLine"
+        android:textColor="@color/_444444"
         android:hint="用户名" />
 
     <EditText
@@ -33,6 +34,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="15dp"
         android:layout_marginRight="20dp"
+        android:textColor="@color/_444444"
         android:hint="密码" />
 
     <Button
