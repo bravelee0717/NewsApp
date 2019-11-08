@@ -66,15 +66,15 @@ public class SplashActivity extends AppCompatActivity {
 
     private void start() {
         boolean is_login = SharePreferenceUtil.getInstance(this.getApplicationContext()).getBoolean(StringUtil.IS_LOGIN);
-//        if (is_login) {
-//            Intent intent = new Intent(SplashActivity.this, MainActivity.class);
-//            startActivity(intent);
-//            finish();
-//        } else {
-        Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
-        startActivity(intent);
-        finish();
-//        }
+        if (is_login) {
+            Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+            startActivity(intent);
+            finish();
+        } else {
+            Intent intent = new Intent(SplashActivity.this, RegisterActivity.class);
+            startActivity(intent);
+            finish();
+        }
     }
 
     private void initTimeCount() {
