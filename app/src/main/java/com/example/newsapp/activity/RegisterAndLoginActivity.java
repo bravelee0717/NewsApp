@@ -3,6 +3,7 @@ package com.example.newsapp.activity;
 
 import android.content.Intent;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.newsapp.R;
@@ -12,6 +13,7 @@ public class RegisterAndLoginActivity extends BaseActivity implements View.OnCli
     private TextView login_tv;
 
     private TextView register_tv;
+
 
     @Override
     public int viewById() {
@@ -29,6 +31,7 @@ public class RegisterAndLoginActivity extends BaseActivity implements View.OnCli
 
     @Override
     public void afterView() {
+
 
 
     }
