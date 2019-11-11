@@ -55,6 +55,18 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
             String username = username_et.getText().toString();
             String password = password_et.getText().toString();
             String reptpassword = reptpassword_et.getText().toString();
+            if (username.trim().equals("")) {
+                Toast.makeText(this, "请输入用户名", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            if (password.trim().equals("")) {
+                Toast.makeText(this, "请输入密码", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            if (reptpassword.trim().equals("")) {
+                Toast.makeText(this, "请确认密码", Toast.LENGTH_SHORT).show();
+                return;
+            }
             if (!password.equals(reptpassword)) {
                 Toast.makeText(this, "两次输入密码不一致,请重新输入", Toast.LENGTH_SHORT).show();
                 return;

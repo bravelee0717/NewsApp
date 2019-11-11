@@ -19,10 +19,6 @@ public class DBUtil {
      */
     private DaoMaster.DevOpenHelper mHelper;//获取Helper对象
     /**
-     * 数据库
-     */
-    private SQLiteDatabase db;
-    /**
      * DaoMaster
      */
     private DaoMaster mDaoMaster;
