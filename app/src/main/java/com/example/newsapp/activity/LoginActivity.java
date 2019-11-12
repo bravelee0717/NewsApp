@@ -1,8 +1,6 @@
 package com.example.newsapp.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,7 +10,6 @@ import com.example.newsapp.R;
 import com.example.newsapp.model.User;
 import com.example.newsapp.utils.DBUtil;
 
-import java.util.List;
 
 public class LoginActivity extends BaseActivity {
 
@@ -48,7 +45,7 @@ public class LoginActivity extends BaseActivity {
                         return;
                     }
                 } else {
-                    Toast.makeText(LoginActivity.this, "用户名错误", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "找不到用户", Toast.LENGTH_SHORT).show();
                     return;
                 }
             }

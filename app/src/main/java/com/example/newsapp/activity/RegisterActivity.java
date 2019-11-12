@@ -10,7 +10,6 @@ import com.example.newsapp.model.User;
 import com.example.newsapp.utils.DBUtil;
 import com.example.newsapp.widget.IconTextView;
 
-import java.util.List;
 
 public class RegisterActivity extends BaseActivity implements View.OnClickListener {
 
