@@ -45,6 +45,7 @@
                 android:layout_gravity="right|center_vertical"
                 android:layout_marginRight="20dp"
                 android:text="@string/icon_delete"
+                android:textColor="@color/_BABABA"
                 android:visibility="gone" />
         </FrameLayout>
 
