@@ -2,6 +2,7 @@ package com.example.newsapp.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.text.TextUtils;
 
 
 import org.apache.commons.codec.binary.Base64;
@@ -86,33 +87,39 @@ public class SharePreferenceUtil {
     }
     //存储对象
     public void saveObject(String key, Object object) {
-
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        ObjectOutputStream oos = null;
         try {
-            //对象输出流转换为字节流
-            ByteArrayOutputStream baos = new ByteArrayOutputStream();
-            ObjectOutputStream oos = new ObjectOutputStream(baos);
+            oos = new ObjectOutputStream(baos);
             oos.writeObject(object);
-            //字节流通过base64加密成密文字符串
-            String value = new String(Base64.encodeBase64(baos.toByteArray()));
-            editor.putString(key, value);
-            editor.apply();
+            // 将对象的转为base64码
+            String objBase64 = new String(Base64.encodeBase64(baos.toByteArray()));
+            editor.putString(key, objBase64).commit();
+            oos.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     public Object getObject(String key) {
+        //base64解码
+        String objBase64 = sharedPreferences.getString(key, null);
+        if (TextUtils.isEmpty(objBase64))
+            return null;
+        // 对Base64格式的字符串进行解码
+        byte[] base64Bytes = Base64.decodeBase64(objBase64.getBytes());
+        ByteArrayInputStream bais = new ByteArrayInputStream(base64Bytes);
 
+        ObjectInputStream ois;
+        Object obj = null;
         try {
-            //base64解码
-            String value = sharedPreferences.getString(key, "");
-            byte[] base64Bytes = Base64.decodeBase64(value.getBytes());
-            ByteArrayInputStream bais = new ByteArrayInputStream(base64Bytes);
-            ObjectInputStream oos = new ObjectInputStream(bais);
-            return (Object)oos.readObject();
+            ois = new ObjectInputStream(bais);
+            obj = (Object) ois.readObject();
+            ois.close();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return null;
+        return obj;
+
     }
 }

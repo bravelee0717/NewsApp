@@ -9,6 +9,8 @@ import android.widget.Toast;
 import com.example.newsapp.R;
 import com.example.newsapp.model.User;
 import com.example.newsapp.utils.DBUtil;
+import com.example.newsapp.utils.SharePreferenceUtil;
+import com.example.newsapp.utils.StringUtil;
 
 
 public class LoginActivity extends BaseActivity {
@@ -39,6 +41,7 @@ public class LoginActivity extends BaseActivity {
                     if (user.getPassword().equals(password_et.getText().toString().trim())) {
                         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(intent);
+                        SharePreferenceUtil.getInstance(getApplicationContext()).saveBoolean(StringUtil.IS_LOGIN,true);
                         finish();
                     } else {
                         Toast.makeText(LoginActivity.this, "密码错误", Toast.LENGTH_SHORT).show();

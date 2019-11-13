@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.newsapp.R;
+import com.example.newsapp.model.User;
 import com.example.newsapp.utils.SharePreferenceUtil;
 import com.example.newsapp.utils.StringUtil;
 
@@ -65,7 +66,7 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     private void start() {
-        boolean is_login = SharePreferenceUtil.getInstance(this.getApplicationContext()).getBoolean(StringUtil.IS_LOGIN);
+       boolean is_login =  SharePreferenceUtil.getInstance(this.getApplicationContext()).getBoolean(StringUtil.IS_LOGIN);
         if (is_login) {
             Intent intent = new Intent(SplashActivity.this, MainActivity.class);
             startActivity(intent);
