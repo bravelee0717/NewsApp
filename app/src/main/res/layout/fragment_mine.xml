@@ -5,11 +5,12 @@
     android:background="@color/_ffffff"
     android:gravity="center">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/exit_login"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="17sp"
-        android:textColor="@color/_444444"
-        android:text="我的" />
+        android:background="@color/_ff3b30"
+        android:text="退出登录"/>
 
 </LinearLayout>

@@ -41,6 +41,10 @@ public class SharePreferenceUtil {
         editor = sharedPreferences.edit();
     }
 
+    public void clear() {
+        editor.clear().commit();
+    }
+
     public void saveString(String key, String value) {
         editor.putString(key, value);
         editor.apply();
@@ -85,6 +89,7 @@ public class SharePreferenceUtil {
     public long getLong(String key) {
         return sharedPreferences.getLong(key, 0);
     }
+
     //存储对象
     public void saveObject(String key, Object object) {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
