@@ -9,6 +9,8 @@ import android.support.v4.view.ViewPager;
 import android.view.View;
 
 import com.example.newsapp.R;
+import com.example.newsapp.widget.searchview.ICallBack;
+import com.example.newsapp.widget.searchview.SearchView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +23,8 @@ public class HomeFragment extends BaseFragment {
 
     TabLayout tabLayout;
     ViewPager viewPager;
+    //初始化搜索框变量
+    SearchView searchView;
 
     List<Fragment> fragments = new ArrayList<>();
     List<String> titles = new ArrayList<>();
@@ -34,6 +38,7 @@ public class HomeFragment extends BaseFragment {
     public void bindView(View rootView) {
         tabLayout = $(rootView, R.id.my_tablayout);
         viewPager = $(rootView, R.id.my_viewpager);
+        searchView = $(rootView, R.id.search_view);
     }
 
     @Override
@@ -43,6 +48,15 @@ public class HomeFragment extends BaseFragment {
 
     @Override
     public void afterView() {
+        // 设置点击搜索按键后的操作（通过回调接口）
+        // 参数 = 搜索框输入的内容
+        searchView.setOnClickSearch(new ICallBack() {
+            @Override
+            public void SearchAciton(String string) {
+                System.out.println("我收到了" + string);
+            }
+        });
+
         tabLayout.setTabMode(TabLayout.MODE_SCROLLABLE);
         getFragments();
         getTitles();
@@ -74,6 +88,7 @@ public class HomeFragment extends BaseFragment {
         titles.add("军事");
         titles.add("教育");
     }
+
     private void getFragments() {
         fragments.add(NewsDetailFragment.newInstance(0));
         fragments.add(NewsDetailFragment.newInstance(1));

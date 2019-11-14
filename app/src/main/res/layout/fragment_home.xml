@@ -6,23 +6,41 @@
     android:background="@color/_F9F9F9"
     android:orientation="vertical">
 
-    <include layout="@layout/search_layout" />
 
-    <android.support.design.widget.TabLayout
-        android:id="@+id/my_tablayout"
+    <com.example.newsapp.widget.searchview.SearchView
+        android:id="@+id/search_view"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        app:tabIndicatorColor="@color/_ff3b30"
-        app:tabSelectedTextColor="@color/_ff3b30"
-        app:tabTextColor="#444444">
+        android:layout_height="wrap_content"
+        app:searchBlockColor="@color/_ffffff"
+        app:searchBlockHeight="150"
+        app:textColorHint="@color/_BABABA"
+        app:textColorSearch="@color/_444444"
+        app:textHintSearch="输入查询关键字"
+        app:textSizeSearch="5dp" />
 
-    </android.support.design.widget.TabLayout>
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/my_viewpager"
+    <LinearLayout
+        android:id="@+id/content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    </android.support.v4.view.ViewPager>
+        <android.support.design.widget.TabLayout
+            android:id="@+id/my_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:tabIndicatorColor="@color/_ff3b30"
+            app:tabSelectedTextColor="@color/_ff3b30"
+            app:tabTextColor="#444444">
+
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/my_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
 
 </LinearLayout>

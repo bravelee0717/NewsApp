@@ -21,7 +21,8 @@
             android:name=".activity.LoginActivity"
             android:launchMode="singleInstance"
             android:windowSoftInputMode="stateHidden" />
-        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.MainActivity"
+            android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
