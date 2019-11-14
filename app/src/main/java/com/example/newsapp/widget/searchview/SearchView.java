@@ -133,8 +133,8 @@ public class SearchView extends LinearLayout {
         // 2. 实例化数据库SQLiteOpenHelper子类对象
         helper = new RecordSQLiteOpenHelper(context);
 
-        // 3. 第1次进入时查询所有的历史搜索记录
-        queryData("");
+//        // 3. 第1次进入时查询所有的历史搜索记录
+//        queryData("");
 
         /**
          * "清空搜索历史"按钮
@@ -254,19 +254,19 @@ public class SearchView extends LinearLayout {
         et_search.setHint(textHintSearch);
         et_search.setHintTextColor(textColorHint);
 
-        // 3. 搜索框背景颜色
-        search_block = (LinearLayout) findViewById(R.id.search_block);
-        LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) search_block.getLayoutParams();
-        params.height = searchBlockHeight;
-        search_block.setBackgroundColor(searchBlockColor);
-        search_block.setLayoutParams(params);
+//        // 3. 搜索框背景颜色
+//        search_block = (LinearLayout) findViewById(R.id.search_block);
+//        LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) search_block.getLayoutParams();
+//        params.height = searchBlockHeight;
+//        search_block.setBackgroundColor(searchBlockColor);
+//        search_block.setLayoutParams(params);
 
         // 4. 历史搜索记录 = ListView显示
         listView = (SearchListView) findViewById(R.id.listView);
 
         // 5. 删除历史搜索记录 按钮
         tv_clear = (TextView) findViewById(R.id.tv_clear);
-        tv_clear.setVisibility(INVISIBLE);
+        tv_clear.setVisibility(GONE);
 
 //        // 6. 返回按键
 //        searchBack = (ImageView) findViewById(R.id.search_back);

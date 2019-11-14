@@ -11,12 +11,11 @@
         android:id="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:searchBlockColor="@color/_ffffff"
-        app:searchBlockHeight="150"
         app:textColorHint="@color/_BABABA"
         app:textColorSearch="@color/_444444"
         app:textHintSearch="输入查询关键字"
         app:textSizeSearch="5dp" />
+
 
     <LinearLayout
         android:id="@+id/content"
