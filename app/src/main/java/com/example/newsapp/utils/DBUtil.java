@@ -5,6 +5,8 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.example.newsapp.model.DaoMaster;
 import com.example.newsapp.model.DaoSession;
+import com.example.newsapp.model.Student;
+import com.example.newsapp.model.StudentDao;
 import com.example.newsapp.model.User;
 import com.example.newsapp.model.UserDao;
 
@@ -86,12 +88,28 @@ public class DBUtil {
     }
 
     /**
+     * UserDao
+     */
+    private StudentDao getStudentDao() {
+        return mDaoSession.getStudentDao();
+    }
+
+    /**
      * 会自动判定是插入还是替换
      *
      * @param user
      */
     public void insertOrReplace(User user) {
         getUserDao().insertOrReplace(user);
+    }
+
+    /**
+     * 会自动判定是插入还是替换
+     *
+     * @param student
+     */
+    public void insertOrReplace(Student student) {
+        getStudentDao().insertOrReplace(student);
     }
 
     /**
@@ -102,6 +120,15 @@ public class DBUtil {
     public long insert(User user) {
         return getUserDao().insert(user);
     }
+    /**
+     * 插入一条记录，表里面要没有与之相同的记录
+     *
+     * @param student
+     */
+    public long insert(Student student) {
+        return getStudentDao().insert(student);
+    }
+
 
     /**
      * 按条件查询数据
