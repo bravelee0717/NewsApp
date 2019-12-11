@@ -41,6 +41,8 @@ dependencies {
     implementation "com.android.support:design:28.0.0"
     //greendao
     implementation 'org.greenrobot:greendao:3.2.2' // 添加库
-
+    //二维码
+    implementation 'com.google.zxing:core:3.3.0' // 添加库
+    implementation 'com.google.zxing:android-core:3.3.0' // 添加库
 
 }

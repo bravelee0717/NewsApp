@@ -3,13 +3,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/_ffffff"
+    android:orientation="vertical"
     android:gravity="center">
+    <EditText
+        android:id="@+id/my_qrcode_et"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/_ff3b30"
+        android:textColorHint="@color/_BABABA"
+        android:hint="请输入二维码内容"
+        android:layout_height="wrap_content" />
 
-    <TextView
+    <ImageView
+        android:id="@+id/my_qrcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/bt_qr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="17sp"
-        android:textColor="@color/_444444"
-        android:text="设置" />
+        android:text="生成二维码" />
 
 </LinearLayout>
