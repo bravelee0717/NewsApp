@@ -5,6 +5,15 @@
     android:background="@color/_ffffff"
     android:orientation="vertical"
     android:gravity="center">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_weight="1"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
     <EditText
         android:id="@+id/my_qrcode_et"
         android:layout_width="match_parent"
@@ -17,8 +26,9 @@
 
     <ImageView
         android:id="@+id/my_qrcode"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:background="@mipmap/qr_code"/>
     <Button
         android:id="@+id/bt_qr"
         android:layout_width="wrap_content"
