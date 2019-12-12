@@ -1,6 +1,7 @@
 package com.example.newsapp.fragment;
 
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v7.widget.GridLayoutManager;
@@ -13,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.newsapp.R;
+import com.example.newsapp.activity.InternetImgActivity;
 import com.example.newsapp.adapters.BaseAdapter;
 import com.example.newsapp.adapters.BaseViewHolder;
 import com.example.newsapp.model.Hero;
@@ -98,6 +100,12 @@ public class SettingFragment extends BaseFragment {
                 @Override
                 public int getItemCount() {
                     return data.size();
+                }
+
+                @Override
+                public void onItemClick(int position) {
+                    Intent intent = new Intent(getActivity(), InternetImgActivity.class);
+                    startActivity(intent);
                 }
             };
 
