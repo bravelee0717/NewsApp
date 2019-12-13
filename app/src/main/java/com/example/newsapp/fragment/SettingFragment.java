@@ -105,6 +105,7 @@ public class SettingFragment extends BaseFragment {
                 @Override
                 public void onItemClick(int position) {
                     Intent intent = new Intent(getActivity(), InternetImgActivity.class);
+                    intent.putExtra("position",position);
                     startActivity(intent);
                 }
             };
